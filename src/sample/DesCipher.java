@@ -129,13 +129,7 @@ public class DesCipher {
     }
 
     private String expand(String right) {
-//        StringBuilder stringBuilder = new StringBuilder();
-//        for (int rightIndex = 0; rightIndex < 8; rightIndex++) {
-//            char ch = right.charAt(expansionTable[rightIndex] - 1);
-//            stringBuilder.append(ch);
-//        }
         return permute(right, expansionTable);
-//        return stringBuilder.toString();
     }
 
     private String reduce(String text) {
