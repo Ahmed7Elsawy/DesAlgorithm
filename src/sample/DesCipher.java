@@ -156,10 +156,6 @@ public class DesCipher {
         return ans;
     }
 
-    private String rightRotate(String str, int d) {
-        return leftRotate(str, str.length() - d);
-    }
-
     private String XOR(String left, String right) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < left.length(); i++) {
